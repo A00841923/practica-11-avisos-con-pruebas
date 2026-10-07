@@ -28,7 +28,8 @@ object AvisoValidator {
     const val CUERPO_MIN = 10
     const val CUERPO_MAX = 400
 
-    fun tituloValido(titulo: String): Boolean = titulo.trim().length in TITULO_MIN..TITULO_MAX
+    // Mutante 1
+    fun tituloValido(titulo: String): Boolean = titulo.trim().length in TITULO_MIN until TITULO_MAX
 
     fun cuerpoValido(cuerpo: String): Boolean = cuerpo.trim().length in CUERPO_MIN..CUERPO_MAX
 
